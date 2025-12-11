@@ -1,0 +1,29 @@
+The system reads text input from the user, separates words, and compares each word to entries stored in a SQLite database.
+If any match is found, the message is flagged as containing offensive content.
+
+1. User inputs a message.
+2. Program splits the message into individual words.
+3. Each word is compared to words stored in SQLite.
+4. If a bad word exists → display a warning.
+5. Otherwise → confirm the message is clean.
+
+Tools and Technologies
+Component	Tool / Technology
+Main Programming Language	C
+Backup Language	Python
+Database	SQLite
+C Compiler	GCC
+Python Libraries	sqlite3, re, os
+
+  Real-time detection of offensive words
+✅  Centralized bad words SQLite database
+✅  Fast C-based logic processing
+✅  Python script for testing and updating the database
+✅  Easily expandable — more words or languages can be added
+
+Integration of C and Python
+Task Language Used	Purpose
+Core detection program:C	Fast execution and efficiency
+Database connection: C Uses sqlite3.h for SQL queries
+Testing & backup script Python Easier testing and word management
+Future app or web integration	Python	Possible with Flask or Kivy
